@@ -1,11 +1,25 @@
-const allCategories = document.querySelectorAll('.item');
-console.log('Number of caregories:', allCategories);
 
-let numbers = [...allCategories];
-console.log(numbers);
-numbers.forEach(function (elem) {
-    const categories = numbers.map(li.item => li.item.nextElementSibling
-)
-});
 
-console.log(categories);
+const items = document.querySelectorAll('.item');
+const itemsLength = items.length;
+
+console.log(`Number of categories: ${itemsLength}`);
+
+
+ items.forEach((element) => {
+
+     let title = element.querySelector('h2').textContent;
+     
+     let titleElements = element.querySelectorAll('li');
+     
+     let titleElementsLength = titleElements.length;
+     
+
+ 	console.log(`Category: ${title}`);
+   console.log(`Elements: ${titleElementsLength}`);
+
+ });
+
+
+
+
