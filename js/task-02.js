@@ -17,8 +17,7 @@ const liItems = ingredients.map((ingredient) => {
   
 });
 
-for (const liItem of liItems) {
-  list.appendChild(liItem);
-}
+  list.append(...liItems);
+
 
 

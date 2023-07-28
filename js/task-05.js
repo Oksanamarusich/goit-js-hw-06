@@ -8,8 +8,7 @@ function handlerSearch(evt) {
         span.textContent = `${evt.currentTarget.value}`
         
     } else {
-        evt.currentTarget.value = 'Anonymous';
-        
+        span.textContent = 'Anonymous';
+}
     }
     
-}
